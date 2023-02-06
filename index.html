@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI QUIZ</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="section-quiz-specification">
+        <h1>Choose your Quiz.</h1>
+        <div class="form-quiz" action="#" method="get">
+            <p class="title">Category</p>
+            <div class="radio-container">
+                <input type="radio" id="general-knowledge" name="category" value="9">
+                <label class="radio-label" for="general-knowledge">
+                    <img class="radio-img" src="./assets/image/general-knowledge.webp" alt="">
+                    <p>General-Knowledge</p>
+                </label>
+                <input type="radio" id="math" name="category" value="19">
+                <label class="radio-label" for="math">
+                    <img class="radio-img" src="./assets/image/math.webp" alt="">
+                    <p>Math</p>
+                </label>
+                <input type="radio" id="sport" name="category" value="21">
+                <label class="radio-label" for="sport">
+                    <img class="radio-img" src="./assets/image/sport.webp" alt="">
+                    <p>Sport</p>
+                </label>
+                <input type="radio" id="computer" name="category" value="18">
+                <label class="radio-label" for="computer">
+                    <img class="radio-img" src="./assets/image/computer.webp" alt="">
+                    <p>Computer</p>
+                </label>
+            </div>
+            <p class="title">Difficulty</p>
+            <div class="radio-container">
+                <input type="radio" id="easy" name="difficulty" value="easy">
+                <label class="radio-label single" for="easy">
+                    Easy
+                </label>
+                <input type="radio" id="medium" name="difficulty" value="medium">
+                <label class="radio-label single" for="medium">
+                    Medium
+                </label>
+                <input type="radio" id="hard" name="difficulty" value="hard">
+                <label class="radio-label single" for="hard">
+                    Hard
+                </label>
+            </div>
+            <p class="title">Number of Question</p>
+            <div class="radio-container">
+                <input type="radio" id="5-question" name="numberOfQuestion" value="5">
+                <label class="radio-label single" for="5-question">
+                    5
+                </label>
+                <input type="radio" id="10-question" name="numberOfQuestion" value="10">
+                <label class="radio-label single" for="10-question">
+                    10
+                </label>
+                <input type="radio" id="25-question" name="numberOfQuestion" value="25">
+                <label class="radio-label single" for="25-question">
+                    25
+                </label>
+                <input type="radio" id="50-question" name="numberOfQuestion" value="50">
+                <label class="radio-label single" for="50-question">
+                    50
+                </label>
+            </div>
+        </div>
+        <button class="primary-btn start" id="start-btn" type="submit">START</button>
+        <div class="error">
+            <p class="error-message">Something wrong, please select all requirements.</p>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="section-card-question-answer">
+            <div class="track-number-question">
+                <h2 class="question-track"></h2>
+                <div class="progress-bar">
+                    <div class="outer-bar">
+                        <div class="inner-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
