@@ -1,5 +1,5 @@
-var maxParticleCount = 200; //set max confetti count
-var particleSpeed = 2; //set the particle animation speed
+var maxParticleCount = 300; //set max confetti count
+var particleSpeed = 1; //set the particle animation speed
 export var startConfetti; //call to start confetti animation
 export var stopConfetti; //call to stop adding confetti
 var toggleConfetti; //call to start or stop the confetti animation depending on whether it's already running
@@ -70,7 +70,9 @@ export var removeConfetti; //call to stop the confetti animation and remove all 
         "resize",
         function () {
           canvas.width = window.innerWidth;
+          console.log(width);
           canvas.height = window.innerHeight;
+          console.log(height);
         },
         true
       );

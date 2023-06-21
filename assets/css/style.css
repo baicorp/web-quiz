@@ -35,7 +35,6 @@ body {
   color: var(--fn-white);
   overflow: hidden;
   position: relative;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -194,6 +193,8 @@ input[type="radio"]:checked + .radio-label {
 /* qna section */
 .quiz {
   display: none;
+  max-width: 734px;
+  margin: 0 auto 0 auto;
 }
 
 .section-card-question-answer {
