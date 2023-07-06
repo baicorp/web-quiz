@@ -93,7 +93,6 @@ async function getTrivia(category, difficulty, numberOfQuestion) {
     const response = await fetch(endPoint);
     const trivia = await response.json();
     let data = trivia.results;
-    console.log(data);
     body.removeChild(loadingdiv);
     const quiz = document.querySelector(".quiz");
     if (data.length === 0) {
@@ -107,7 +106,6 @@ async function getTrivia(category, difficulty, numberOfQuestion) {
     quiz.style.display = "block";
     start(data);
   } catch (err) {
-    console.log(err);
     body.removeChild(loadingdiv);
     const errorFetch = errorPage(
       `Sorry, there was an error processing your request. Please try again.`

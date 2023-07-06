@@ -302,6 +302,8 @@ input[type="radio"]:checked + .radio-label {
   align-items: center;
   height: 100dvh;
   padding: 30px 20px;
+  max-width: 734px;
+  margin: 0 auto 0 auto;
 }
 
 .section-quiz-summary h2,
